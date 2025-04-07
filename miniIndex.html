@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mīklas</title>
+    <link rel="stylesheet" href="miniStyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="2p1mIndex.html"><button>1. spēle</button></a>
+            <a href="miniIndex.html"><button>2. spēle</button></a>
+            <a href="convertIndex.html"><button>Konvertētājs</button></a>
+        </nav>
+    </header>
+    <main>
+        <a href="mainIndex.html" class="majina">
+            <img src="home.jpg" alt="Sākumlapa" />
+        </a>
+
+    <div class="mīklas">
+        <h1>Mīklu Spēle</h1>
+        <div id="riddles"></div>
+        <div class="pogas">
+            <button onclick="checkAnswers()" class="pogas1" >Pārbaudīt atbildes</button>
+            <p id="result"></p>
+            <button onclick="newGame()"class="pogas1">Nākošā spēle</button>
+        </div>
+        
+    </div>
+
+
+    <footer>
+        <p>&copy; Izklaides logs</p>
+    </footer>
+    <script src="miniScript.js"></script>
+</body>
+</html>

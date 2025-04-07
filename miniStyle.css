@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(189, 206, 218);
+    margin: 0;
+    padding: 20px;
+}
+.mīklas {
+    background: rgb(181, 215, 238);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin:20px;
+    margin-left: auto;    
+    margin-right: auto;
+}
+button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #ffffff;
+    padding: 10px;
+    border: solid black 1px;
+    width: 100%;
+}
+button {
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    border: solid black 1px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor:pointer;
+}
+button:hover {
+    background: #b87070;
+}
+.section {
+    display: none;
+    padding: 20px;
+}
+.active {
+    display: block;
+}
+footer {
+    border: solid black 1px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.konverti{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.konverts{
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.majina{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+}
+    
+.majina img {
+        width: 50px;
+        height: 50px;
+        border: solid black 1px;
+}
+    
+
+
+.pogas{
+    padding-top: 20px;
+    
+}
+.pogas1{
+    background:  rgb(189, 206, 218);
+}
+
+    

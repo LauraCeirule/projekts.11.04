@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #ffffff;
+    padding: 10px;
+    border: solid black 1px;
+    width: 100%;
+}
+button {
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    border: solid black 1px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor:pointer;
+}
+button:hover {
+    background: #b87070;
+}
+.section {
+    display: none;
+    padding: 20px;
+}
+.active {
+    display: block;
+}
+footer {
+    border: solid black 1px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.konverti{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.konverts{
+    width: 25%;
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+    border: 1px solid black;
+}
+
+.majina{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+}
+    
+.majina img {
+        width: 50px;
+        height: 50px;
+        border: solid black 1px;
+}
+    
+
+
+.a{
+    background-color: #f5e8f2;
+}

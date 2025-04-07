@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="2p1mStyle.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="2p1mIndex.html"><button>1. spēle</button></a>
+            <a href="miniIndex.html"><button>2. spēle</button></a>
+            <a href="convertIndex.html"><button>Konvertētājs</button></a>
+        </nav>
+    </header>
+    <main>
+        <a href="mainIndex.html" class="majina">
+            <img src="home.jpg" alt="Sākumlapa" />
+        </a>
     <form class="vidus">
         <h1>2 patiesības un 1 meli</h1>
         <div class="fakti">
@@ -18,18 +29,20 @@
     </form>
 
     <div class="pogas">
-        <button onclick="parbaudi(1)">fakts 1</button>
-        <button onclick="parbaudi(2)">fakts 2</button>
-        <button onclick="parbaudi(3)">fakts 3</button>
+        <button onclick="parbaude(1)">fakts 1</button>
+        <button onclick="parbaude(2)">fakts 2</button>
+        <button onclick="parbaude(3)">fakts 3</button>
     </div>
 
     <p id="rezultāts"></p>
 
-    <button class="attiestata" onclick="attspeli()">Sākt jaunu spēli</button>
+    <button class="attiestata" onclick="attiestata()">Sākt jaunu spēli</button>
 
 
 
-
+    <footer>
+        <p>&copy; Izklaides logs</p>
+    </footer>
     <script src="2p1mScript.js"></script>
 </body>
 </html>
