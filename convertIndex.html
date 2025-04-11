@@ -9,8 +9,8 @@
 <body>
     <header>
         <nav>
-            <a href="2p1mIndex.html"><button>1. spēle</button></a>
-            <a href="miniIndex.html"><button>2. spēle</button></a>
+            <a href="2p1mIndex.html"><button>2P1A</button></a>
+            <a href="miniIndex.html"><button>Mīklas</button></a>
             <a href="convertIndex.html"><button>Konvertētājs</button></a>
         </nav>
     </header>
@@ -19,9 +19,54 @@
             <img src="home.jpg" alt="Sākumlapa" />
         </a>
 
-        <form action="">
-            <label for="">Ievadi </label>
+        <form action="" class="bloki">
+            <h2>Laika konvertētājs</h2>
+            <label for="">Ievadi skaitli: </label>
+            <input type="number" name="" id="ievadeLaiks">
+            
+            <br>
+            <label for="">Kā tu vēlies pārveidot šo skaitli?</label>
+            <div class="radioGrupa1">
+                <div class="radioVieniba1"><p><input type="radio"  name="laiks" id="sekunde">No sekundēm uz minūtēm</p></div>
+                <div class="radioVieniba1"><p><input type="radio"  name="laiks" id="minute">No minūtēm uz stundām</p></div>
+                <div class="radioVieniba1"><p><input type="radio"  name="laiks" id="stunda">No stundām uz sekundēm</p></div>
+                <div class="radioVieniba1"><p><input type="radio"  name="laiks" id="sekunde1">No sekundēm uz stundām</p></div>
+                <div class="radioVieniba1"><p><input type="radio"  name="laiks" id="minute1">No minūtēm uz sekundēm</p></div>
+                <div class="radioVieniba1"><p><input type="radio"  name="laiks" id="stunda1">No stundām uz minūtēm</p></div>
+            </div> 
+            <button type="button" onclick="pogaLaiks()">Apstiprini</button>
+            
+            <p id="izvadeLaiks">Rezultāts:</p>
         </form>
+
+
+        <form action="" class="bloki">
+            <h2>Temperatūras konvertētājs</h2>
+            <label for="">Ievadi skaitli: </label>
+            <input type="number" name="" id="ievadeTemperatura">
+
+            <br>
+            <label for="">Kā tu vēlies pārveidot šo skaitli?</label>
+            <div class="radioGrupa1">
+                <div class="radioVieniba1"><p><input type="radio" name="temperatura" id="celsijs">No Celsijiem uz Fārenheitiem</p></div>
+                <div class="radioVieniba1"><p><input type="radio" name="temperatura" id="farenheits">No Fārenheitiem uz Kelviniem</p></div>
+                <div class="radioVieniba1"><p><input type="radio" name="temperatura" id="kelvins">No Kelviniem uz Celsijiem</p></div>
+                <div class="radioVieniba1"><p><input type="radio" name="temperatura" id="celsijs1">No Celsijiem uz Kelviniem</p></div>
+                <div class="radioVieniba1"><p><input type="radio" name="temperatura" id="farenheits1">No Fārenheitiem uz Celsijiem</p></div>
+                <div class="radioVieniba1"><p><input type="radio" name="temperatura" id="kelvins1">No Kelviniem uz Fārenheitiem</p></div>
+            </div>
+            <button type="button" onclick="pogaTemperatura()">Apstiprini</button>
+
+            <p id="izvadeTemperatura">Rezultāts:</p>
+
+            
+        </form>
+
+        <div class="laiks">
+            <br>
+            <h2>Šodienas datums un laiks:</h2>
+            <div id="plkst" class="plkst"></div>
+        </div>
 
 
 

@@ -19,7 +19,7 @@ button {
     cursor:pointer;
 }
 button:hover {
-    background: #b87070;
+    background: #e7cfed;
 }
 .section {
     display: none;
@@ -43,14 +43,34 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    margin-top: 40px; 
 
 }
 
-.konverts{
+.konvertsa{
     width: 25%;
-    text-align: center;
+    height:500px;
+    text-align: justify;
     padding: 10px;
-    background-color: lightgray;
+    background-color: #f5e8f2;
+    border: 1px solid black;
+}
+
+.konvertsb{
+    width: 25%;
+    height: 500px;
+    text-align: justify;
+    padding: 10px;
+    background-color:rgb(181, 215, 238);
+    border: 1px solid black;
+}
+
+.konvertsc{
+    width: 25%;
+    height: 500px;
+    text-align: justify;
+    padding: 10px;
+    background-color: rgb(172, 235, 199);
     border: 1px solid black;
 }
 
@@ -62,13 +82,28 @@ footer {
 }
     
 .majina img {
-        width: 50px;
-        height: 50px;
-        border: solid black 1px;
+    width: 50px;
+    height: 50px;
+    border: solid black 1px;
 }
     
 
+img{
+    height:300px;
+    width:300px;
+}
 
-.a{
-    background-color: #f5e8f2;
+.centrs-img{
+    display: block;
+    margin: 0 auto;
+}
+
+.centrs-h2{
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 40px;
 }

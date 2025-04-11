@@ -12,7 +12,7 @@ const fakti = [
         lieIndex:0
     },
     {
-        fakts: ["Horvātijaā ir vairāk nekā 1100 salu.",'Horvātijā tika filmēta filma "Troja"', "Horvātijas upēs un ezeros ir daudz foreļu, taču makšķerēšana ir aizliegta ar likumu." ],
+        fakts: ["Horvātijā ir vairāk nekā 1100 salu.",'Horvātijā tika filmēta filma "Troja"', "Horvātijas upēs un ezeros ir daudz foreļu, taču makšķerēšana ir aizliegta ar likumu." ],
         lieIndex:1
     },
     {

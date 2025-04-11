@@ -1,4 +1,4 @@
-const allRiddles = [
+const visasMiklas = [
     { question: "Aka bez dibena.", answer: "gredzens" },
     { question: "Panest var, izskaitīt nevar.", answer: "mati" },
     { question: "Kauls. bet tomēr zied.", answer: "nags" },
@@ -18,46 +18,47 @@ const allRiddles = [
 
 ];
 
-let currentRiddles = [];
+let miklasTagad = [];
 
-function getRandomRiddles(count = 3) {
-    const shuffled = [...allRiddles].sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, count);
+function randomMiklas(count = 3) {
+    const sajauktas = [...visasMiklas].sort(() => 0.5 - Math.random());
+    return sajauktas.slice(0, count);
 }
 
-function generateRiddles() {
-    const riddlesContainer = document.getElementById("riddles");
-    riddlesContainer.innerHTML = "";
-    currentRiddles = getRandomRiddles();
-    currentRiddles.forEach((riddle, index) => {
-        const riddleDiv = document.createElement("div");
-        const riddleP = document.createElement("p");
+function velMiklas() {
+    const mikluBloks = document.getElementById("miklas");
+    mikluBloks.innerHTML = "";
+    miklasTagad = randomMiklas();
+    miklasTagad.forEach((riddle, index) => {
+        const miklasDiv = document.createElement("div");
+        const miklasP = document.createElement("p");
         const input = document.createElement("input");
         
-        riddleP.textContent = riddle.question;
+        miklasP.textContent = riddle.question;
         input.type = "text";
         input.id = `answer${index}`;
+        input.placeholder="Ievadiet tekstu..."
 
-        riddleDiv.appendChild(riddleP);
-        riddleDiv.appendChild(input);
-        riddlesContainer.appendChild(riddleDiv);
+        miklasDiv.appendChild(miklasP);
+        miklasDiv.appendChild(input);
+        mikluBloks.appendChild(miklasDiv);
     });
 }
 
-function checkAnswers() {
+function parbaudi() {
     let correct = 0;
-    currentRiddles.forEach((riddle, index) => {
-        const userAnswer = document.getElementById(`answer${index}`).value.trim().toLowerCase();
-        if (userAnswer === riddle.answer) {
+    miklasTagad.forEach((riddle, index) => {
+        const lietotajaAtbilde = document.getElementById(`answer${index}`).value.trim().toLowerCase();
+        if (lietotajaAtbilde === riddle.answer) {
             correct++;
         }
     });
-    document.getElementById("result").innerText = `Jūs atbildējāt pareizi uz ${correct} no ${currentRiddles.length} mīklām.`;
+    document.getElementById("rezultats").innerText = `Jūs atbildējāt pareizi uz ${correct} no ${miklasTagad.length} mīklām.`;
 }
 
-function newGame() {
-    generateRiddles();
-    document.getElementById("result").innerText = "";
+function jaunaSpele() {
+    velMiklas();
+    document.getElementById("rezultats").innerText = "";
 }
 
-newGame();
+jaunaSpele();
